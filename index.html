@@ -8,31 +8,37 @@
 <body>
     <h1>Git Übung</h1>
     <p>Ich habe ein neues Repository auf Github erstellt. Dann bin ich im Terminal auf den dev Ordner gegangen und habe das Repository geklont. </p>
+    <section>
     <p>
-        ➜      dev cd test
-        ➜  test git:(master) git branch testseite
-        ➜  test git:(master) git checkout testseite
-        Zu Branch 'testseite' gewechselt
-        ➜  test git:(testseite) code .
+        <ul>
+            <li>dev cd test</li>
+            <li>test git:(master) git branch testseite</li>
+            <li>test git:(master) git checkout testseite</li>
+            <li>u Branch 'testseite' gewechselt</li>
+            <li>test git:(testseite) code .</li>
+        </ul>
     </p>
-
+</section>
+<section>
     <p>
         In VSCode habe ich über Ctrl+Shift+`das Terminal geöffnet und hier mit dem Touch Command eine index.html angelegt. Nachdem ich nun diese Datei angelegt habe, kann ich sie adden, committen und pushen.
     </p>
-
+</section>
     <h2>zweite Branch</h2>
     <p>Nachdem ich die Testseite gepushed habe, habe ich eine Pull Request erstellt und die Testseite mit dem Master gemerged. Dann habe ich mir im Terminal die aktuellste Version heruntergeladen:
-        ```
-        git checkout master
-        git pull 
-        git branch
-        git branch -d testseite
-        ```
+        <section>
+            <ul>
+       <li>git checkout master</li> 
+       <li> git pull </li>
+       <li>git branch</li> 
+        <li> git branch -d testseite </li>
+    </ul>
+    </section>
     </p>
-    <p>Mit `git checkout -b seite 2` habe ich mir eine neue Branch erstellt und diese direkt geöffnet. Nun kann ich meine neuen Änderungen wieder adden, committen und pushen.</p>
+    <p>Mit <em> git checkout -b seite 2</em> habe ich mir eine neue Branch erstellt und diese direkt geöffnet. Nun kann ich meine neuen Änderungen wieder adden, committen und pushen.</p>
 
 <p>Nach dem Pushen kann ich noch weitere Änderungen vornehmen und einen zweiten Commit machen.</p>
-<p>Beim ersten Push muss ich den Namen der Branch angeben `git push - u origin Name`. Ab dem zweiten Push reicht dann `git push`. Außerdem reicht es bei einer bestehenden Datei den command `git commit -am " "` zu verwenden. Vorausgesetzt, man möchte alles adden und committen. Somit spart man sich die zwei separaten Schritte.</p>
+<p>Beim ersten Push muss ich den Namen der Branch angeben <em> git push - u origin Name</em>. Ab dem zweiten Push reicht dann <em>git push</em>. Außerdem reicht es bei einer bestehenden Datei den command <em> git commit -am " "</em> zu verwenden. Vorausgesetzt, man möchte alles adden und committen. Somit spart man sich die zwei separaten Schritte.</p>
 
 <h2>Konflikte beim Mergen</h2>
 <p>Wenn mehrere Leute gleichzeitig an verschiedenen Branches arbeiten, kann es beim Mergen zu Konflikten kommen, wenn z.B. verschiedene Änderungen in der gleichen Zeile gemacht wurden.
