@@ -33,5 +33,24 @@
 
 <p>Nach dem Pushen kann ich noch weitere Änderungen vornehmen und einen zweiten Commit machen.</p>
 <p>Beim ersten Push muss ich den Namen der Branch angeben `git push - u origin Name`. Ab dem zweiten Push reicht dann `git push`. Außerdem reicht es bei einer bestehenden Datei den command `git commit -am " "` zu verwenden. Vorausgesetzt, man möchte alles adden und committen. Somit spart man sich die zwei separaten Schritte.</p>
+
+<h2>Konflikte beim Mergen</h2>
+<p>Wenn mehrere Leute gleichzeitig an verschiedenen Branches arbeiten, kann es beim Mergen zu Konflikten kommen, wenn z.B. verschiedene Änderungen in der gleichen Zeile gemacht wurden.
+    Um diesen Konflikt zu lösen:
+    <ol>
+        <li>git checkout master</li>
+        <li>git pull</li>
+        <li>git checkout branch</li>
+        <li>git merge master</li>
+
+        VSCode zeigt dann die Änderungen an und bietet die Möglichkeit diese zu akzeptieren oder abzulehnen.
+
+        <ol>
+            <li>Speichern</li>
+            <li>add + commit + push</li>
+        Nun sollte man die Dateien in Github mergen können.
+        </ol>
+    </ol>
+</p>
 </body>
 </html>
